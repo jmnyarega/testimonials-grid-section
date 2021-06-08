@@ -12,6 +12,7 @@ you improve your coding skills by building realistic projects.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - Reactjs
 
 ## Overview
 
@@ -21,7 +22,7 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot ![Desktop](./screenshot.jpg) ![Mobile](./screenshot.jpg)
+### Screenshot ![Desktop](./design/screenshots/desktop.png) ![Mobile](./design/screenshots/mobile.png)
 
 ### Links
 
@@ -36,3 +37,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Reactjs
