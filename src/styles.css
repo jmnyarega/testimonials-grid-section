@@ -23,17 +23,17 @@ body {
   font-size: 0.8125rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: #eee;
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
 }
 
 .container {
   max-width: 1440px;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -52,10 +52,6 @@ body {
   content: '" ';
 }
 
-.card__text::after {
-  content: ' "';
-}
-
 .user__status {
   opacity: 0.5;
 }
@@ -66,6 +62,10 @@ body {
   margin: 1rem auto;
 
   border-radius: 0.5rem;
+}
+
+.card:hover {
+  opacity: 0.9;
 }
 
 .user {
@@ -86,6 +86,23 @@ body {
 .card--violate {
   background-color: var(--moderate-violet);
   color: white;
+  position: relative;
+}
+
+.card--violate .card__title {
+  position: relative;
+  z-index: 2;
+}
+
+.card--violate::after {
+  content: "";
+  position: absolute;
+  background-image: url("../src/images/bg-pattern-quotation.svg");
+  height: 102px;
+  width: 102px;
+  top: 0;
+  left: 70%;
+  z-index: 1;
 }
 
 .card--light-dark-blue {
@@ -109,11 +126,12 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a a b c" "d e e c";
-    column-gap: 1.5rem;
+    gap: 1.5rem;
   }
 
   .card {
     max-width: fit-content;
+    margin: 0;
   }
 
   .card--violate {
