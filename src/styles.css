@@ -132,7 +132,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a a b c" "d e e c";
     gap: 1.5rem;
-    width: 70%;
   }
 
   .card {
