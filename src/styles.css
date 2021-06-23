@@ -29,11 +29,12 @@ body {
 
   display: grid;
   place-items: center;
+  background-color: var(--light-gray);
 }
 
 .container {
   max-width: 1440px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -50,6 +51,10 @@ body {
 
 .card__text::before {
   content: '" ';
+}
+
+.card__text::after {
+  content: ' "';
 }
 
 .user__status {
@@ -101,7 +106,7 @@ body {
   height: 102px;
   width: 102px;
   top: 0;
-  left: 70%;
+  left: 50%;
   z-index: 1;
 }
 
@@ -121,12 +126,13 @@ body {
   color: white;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a a b c" "d e e c";
     gap: 1.5rem;
+    width: 70%;
   }
 
   .card {
@@ -148,5 +154,9 @@ body {
 
   .card--dark-blue {
     grid-area: e;
+  }
+
+  .card--violate::after {
+    left: 70%;
   }
 }
