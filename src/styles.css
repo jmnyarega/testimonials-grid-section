@@ -29,12 +29,11 @@ body {
 
   display: grid;
   place-items: center;
-  background-color: var(--light-gray);
 }
 
 .container {
   max-width: 1440px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -132,7 +131,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a a b c" "d e e c";
     gap: 1.5rem;
-    width: 80%;
   }
 
   .card {
